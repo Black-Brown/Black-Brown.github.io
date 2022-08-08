@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    @import url ('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap')
+}
+body {
+    font-family: 'Comic Neue', cursive;
+    height: 100vh;
+    width: 100%;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor img {
+    height: 150px;
+}
+.caja {
+    height: 20px;
+    width: 160px;
+    border: 3px solid black;
+    
+}
+.caja-loading {
+    height: 100%;
+    width: 100%;
+    background-color: yellowgreen;
+    animation: loading 2s;
+
+}
+@keyframes loading {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 160px;
+    }
+    
+}
+p {
+    font-size: 24px;
+}
+.contenedor >i {
+    font-size: 50px;
+}
+button {
+    height: 35px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: bisque;
+    cursor: pointer;
+}
+button:hover {
+    background-color: black;
+}
+
+button p {
+    font-size: 15px;
+}
+
+button p:hover {
+    color:bisque;
+}
+
+@media screen and (max-width: 800px) {
+    
+}
